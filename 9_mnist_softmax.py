@@ -6,10 +6,10 @@ import torch.nn.functional as F
 
 batch_size = 64
 
-train_loader = DataLoader(datasets.MNIST('../data', train = True, download = False, transform = transforms.Compose(
+train_loader = DataLoader(datasets.MNIST('./data', train = True, download = False, transform = transforms.Compose(
     [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])), batch_size = batch_size, shuffle = True)
 
-test_loader = DataLoader(datasets.MNIST('../data', train = False, download = False, transform = transforms.Compose(
+test_loader = DataLoader(datasets.MNIST('./data', train = False, download = False, transform = transforms.Compose(
     [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])), batch_size = batch_size, shuffle = True)
 
 
