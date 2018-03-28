@@ -29,6 +29,7 @@ That is, we need to walk along the path where
 <center>
 <a href="https://www.codecogs.com/eqnedit.php?latex=\fn_cm&space;$$w&space;=&space;w&space;-&space;\alpha\frac{\partial{loss}}{\partial{w}}$$" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_cm&space;$$w&space;=&space;w&space;-&space;\alpha\frac{\partial{loss}}{\partial{w}}$$" title="$$w = w - \alpha\frac{\partial{loss}}{\partial{w}}$$" /></a>.
 </center>
+
 Such a path is formally called ***Gradient Descent***.
 
 You can find the codes in [gradient_model.py] to show that `loss function` decreases as walking along the above path.
