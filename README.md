@@ -2,7 +2,7 @@
 
 This repository implements example codes introduced in the ***PyTorchZeroToAll*** course offered by ***HKUST***. 
 ___
-## Category
+## Catalog
 
 * [1. Version check](#version_check)
 * [2. Linear model](#linear_model)
