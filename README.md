@@ -1,8 +1,18 @@
 # PyTorchZeroToAll
 
 This repository implements example codes introduced in the ***PyTorchZeroToAll*** course offered by ***HKUST***. 
+___
+## Category
 
-## 1. Version check
+* [1. Version check](#version_check)
+* [2. Linear model](#linear_model)
+* [3. Gradient model](#gradient_model)
+* [4. Backward propagation](#backward)
+* [5. Linear regression in PyTorch](linear_regression)
+* [6. Logistic regression](logistic_regression)
+
+___
+## <a name = "version_check" /> 1. Version check
 
 Run ```print(torch.__version__)``` to check version status.
 
@@ -10,7 +20,7 @@ You can find the codes in [version_check.py].
 
 [version_check.py]: https://github.com/Tom-Pomelo/PyTorchZeroToAll/blob/master/1_version_check.py
 
-## 2. Linear model
+## <a name = "linear_model" /> 2. Linear model
 
 Assume a linear correlation between datasets `x` and `y`, namely, <center><a href="https://www.codecogs.com/eqnedit.php?latex=\fn_cm&space;$$\bar&space;y&space;=&space;w&space;*&space;x$$" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_cm&space;$$\bar&space;y&space;=&space;w&space;*&space;x$$" title="$$\bar y = w * x$$" /></a></center>
 
@@ -20,7 +30,7 @@ You can find the codes in [linear_model.py] to plot `loss function` versus `w`,
 
 [linear_model.py]: https://github.com/Tom-Pomelo/PyTorchZeroToAll/blob/master/2_linear_model.py
 
-## 3. Gradient model
+## <a name = "gradient_model" /> 3. Gradient model
 
 After retrieving the plot between `loss function` and `w`, we try to minimize the `loss function`.
 
@@ -34,7 +44,7 @@ Such a path is formally called ***Gradient Descent***.
 
 You can find the codes in [gradient_model.py] to show that `loss function` decreases as walking along the above path.
 
-## 4. Backward propagation
+## <a name = "backward" /> 4. Backward propagation
 
 `PyTorch` is convenient in that it enables automatic gradient calculation. 
 
@@ -44,7 +54,7 @@ Rewrite [gradient_model.py] with PyTorch using backward propagation.
 
 You can find the codes in [backward_propagation.py] with `PyTorch` style.
 
-## 5. Linear regression in PyTorch
+## <a name = "linear_regression" /> 5. Linear regression in PyTorch
 
 This is the first time we have to construct a model in `PyTorch`.
 
@@ -70,7 +80,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
 
 You can find the codes in [linear_regression.py] to see how a model is constructed and you may would like to try for different `loss functions` and `optimizers`.
 
-## 6. Logistic regression
+## <a name = "logistic_regression" /> 6. Logistic regression
 
 Have you ever hesitated whether or not you should propose to your dream lover?
 
