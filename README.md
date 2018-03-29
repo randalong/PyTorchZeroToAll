@@ -58,7 +58,7 @@ You can find the codes in [backward_propagation.py] with `PyTorch` style.
 
 This is the first time we have to construct a model in `PyTorch`.
 
-```
+```python
 class Model(torch.nn.Module):
     def __init__(self):
         super(Model, self).__init__()
@@ -73,7 +73,7 @@ Notice that `_init_` and `forward` functions must be implemented.
 
 After the model class is constructed, we have to construct `loss function` and `optimizer`. 
 
-```
+```python
 criterion = torch.nn.MSELoss(size_average = False)
 optimizer = torch.optim.SGD(model.parameters(), lr = 0.01)
 ```
@@ -90,7 +90,7 @@ A very important function you may want to know: [Sigmoid]
 
 Back to our example, we now have datasets `x` and `y`.
 
-```
+```python
 x_data = Variable(torch.Tensor([[1.0], [2.0], [3.0], [4.0]]))
 y_data = Variable(torch.Tensor([[0.], [0.], [1.], [1.]]))
 ```
